@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.analysisExportController">
+   <children>
+      <AnchorPane prefHeight="339.0" prefWidth="488.0">
+         <children>
+            <Label layoutX="61.0" layoutY="66.0" prefHeight="23.0" prefWidth="132.0" text="Export Course:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="129.0" text="Path:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="195.0" prefHeight="24.0" prefWidth="95.0" text="File Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="127.0" layoutY="268.0" mnemonicParsing="false" onAction="#Export" prefHeight="36.0" prefWidth="82.0" text="Export">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="274.0" layoutY="268.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="inputFileName" layoutX="209.0" layoutY="193.0" prefHeight="27.0" prefWidth="150.0" />
+            <Label fx:id="CourseShow" layoutX="213.0" layoutY="56.0" prefHeight="43.0" prefWidth="150.0" textAlignment="CENTER" />
+            <TextField fx:id="inputFilePath" layoutX="209.0" layoutY="127.0" prefHeight="27.0" prefWidth="150.0" />
+            <Button layoutX="374.0" layoutY="127.0" mnemonicParsing="false" onAction="#chooseDir" text="Choose" />
+            <Label layoutX="363.0" layoutY="198.0" text=".xlsx" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

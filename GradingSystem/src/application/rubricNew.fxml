@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rubricNewController">
+   <children>
+      <AnchorPane prefHeight="324.0" prefWidth="484.0">
+         <children>
+            <Label layoutX="75.0" layoutY="56.0" text="Rubric Title">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="146.0" text="Item Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rubricTitle" layoutX="207.0" layoutY="57.0" prefHeight="23.0" prefWidth="177.0" />
+            <ComboBox fx:id="chooseItemNum" layoutX="249.0" layoutY="147.0" prefHeight="23.0" prefWidth="136.0" />
+            <Button layoutX="75.0" layoutY="235.0" mnemonicParsing="false" onAction="#create" text="Create">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="303.0" layoutY="235.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.assessmentNextController">
+   <children>
+      <AnchorPane prefHeight="418.0" prefWidth="456.0">
+         <children>
+            <Label layoutX="139.0" layoutY="57.0" text="Question Setting">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="186.0" text="Weight">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="123.0" text="Question Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="67.0" layoutY="246.0" text="Rubric">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="weightChoice" layoutX="165.0" layoutY="187.0" prefHeight="23.0" prefWidth="70.0" />
+            <ComboBox fx:id="rubricList" layoutX="162.0" layoutY="247.0" prefHeight="23.0" prefWidth="212.0" />
+            <Button layoutX="67.0" layoutY="325.0" mnemonicParsing="false" onAction="#save" prefHeight="47.0" prefWidth="95.0" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="276.0" layoutY="325.0" mnemonicParsing="false" onAction="#cancel" prefHeight="47.0" prefWidth="95.0" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="questionNumber" editable="false" layoutX="272.0" layoutY="123.0" prefHeight="24.0" prefWidth="102.0" />
+            <Label layoutX="268.0" layoutY="187.0" text="(percentage)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

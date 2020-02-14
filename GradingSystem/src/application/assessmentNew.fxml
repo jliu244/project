@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.assessmentNewController">
+   <children>
+      <AnchorPane prefHeight="357.0" prefWidth="464.0">
+         <children>
+            <Label layoutX="53.0" layoutY="63.0" text="Assessment Title">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="136.0" text="Weighting">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="assessmentTitle" layoutX="226.0" layoutY="64.0" prefHeight="23.0" prefWidth="179.0" />
+            <ComboBox fx:id="weightChoice" layoutX="184.0" layoutY="137.0" prefHeight="23.0" prefWidth="84.0" />
+            <Button layoutX="53.0" layoutY="274.0" mnemonicParsing="false" onAction="#next" prefHeight="47.0" prefWidth="91.0" text="Next">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="305.0" layoutY="274.0" mnemonicParsing="false" onAction="#cancel" prefHeight="47.0" prefWidth="91.0" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="295.0" layoutY="136.0" text="(percentage)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="207.0" text="Number of Question">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="numberOfQuestionsList" layoutX="271.0" layoutY="208.0" prefHeight="23.0" prefWidth="130.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

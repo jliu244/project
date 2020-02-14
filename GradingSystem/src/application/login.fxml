@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="391.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <TextField fx:id="username" layoutX="141.0" layoutY="170.0" prefHeight="27.0" prefWidth="181.0" />
+      <Button layoutX="130.0" layoutY="312.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="112.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="103.0" layoutY="34.0" text="Rubrics-based" textAlignment="CENTER" textFill="#434141">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="172.0" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="239.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="141.0" layoutY="237.0" prefHeight="27.0" prefWidth="181.0" />
+      <Label layoutX="96.0" layoutY="75.0" text="Grading System" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

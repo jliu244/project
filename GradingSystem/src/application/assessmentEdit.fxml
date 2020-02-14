@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.assessmentEditController">
+   <children>
+      <AnchorPane prefHeight="322.0" prefWidth="464.0">
+         <children>
+            <Label layoutX="53.0" layoutY="63.0" text="Assessment Title">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="136.0" text="Weighting">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="assessmentTitle" editable="false" layoutX="226.0" layoutY="64.0" prefHeight="23.0" prefWidth="179.0" />
+            <ComboBox fx:id="weightChoice" layoutX="184.0" layoutY="137.0" prefHeight="23.0" prefWidth="219.0" />
+            <Button layoutX="99.0" layoutY="226.0" mnemonicParsing="false" onAction="#save" prefHeight="47.0" prefWidth="91.0" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="270.0" layoutY="226.0" mnemonicParsing="false" onAction="#cancel" prefHeight="47.0" prefWidth="91.0" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

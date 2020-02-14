@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.analysisPrintController">
+   <children>
+      <AnchorPane prefHeight="339.0" prefWidth="488.0">
+         <children>
+            <Label layoutX="111.0" layoutY="66.0" text="Object">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="128.0" text="Copy">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="194.0" text="Printer">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="213.0" layoutY="67.0" prefWidth="150.0" />
+            <ComboBox layoutX="213.0" layoutY="129.0" prefWidth="150.0" />
+            <ComboBox layoutX="213.0" layoutY="195.0" prefWidth="150.0" />
+            <Button layoutX="127.0" layoutY="268.0" mnemonicParsing="false" onAction="#print" prefHeight="36.0" prefWidth="82.0" text="Print">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="274.0" layoutY="268.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
